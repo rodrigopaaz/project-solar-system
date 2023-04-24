@@ -1,3 +1,364 @@
+* {
+  box-sizing: border-box;
+  font-family: Epilogue, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('images/background.png');
+  background-size: cover;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .App {
   text-align: center;
+}
+
+.SolarSystem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.SolarSystem div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.planetas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60%;
+  flex-wrap: nowrap;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+
+.missions {
+  display: flex;
+  overflow-wrap: break-word;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 50px;
+  margin: 20px;
+  flex-basis: 50%;
+  opacity: none;
+  background: rgba(24, 26, 37, 0.5);
+  mix-blend-mode: hard-light;
+  border: 1px solid #FFFFFF;
+  border-radius: 17px;
+}
+
+.mission {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 425px;
+  height: 242px;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.master {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 150px;
+  width: 1098px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.9);
+  border-radius: 30px;
+}
+
+.mission div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 40%;
+  align-items: center;
+  mix-blend-mode: hard-light;
+  border-radius: 17px;
+}
+
+.nameYear p:first-child {
+  display: flex;
+  flex-basis: 40%;
+}
+
+.SolarSystem div :nth-child(1) img {
+  width: 41px;
+  height: 31px;
+}
+
+.SolarSystem div :nth-child(2) img {
+  display: flex;
+  width: 102px;
+  height: 76px;
+  left: 137px;
+  top: 597px;
+}
+
+.SolarSystem div :nth-child(3) img {
+  display: flex;
+  width: 106px;
+  height: 79px;
+}
+
+.SolarSystem div :nth-child(4) img {
+  width: 66px;
+  height: 50px;
+}
+
+.SolarSystem div :nth-child(5) img {
+  width: 273px;
+  height: 204px;
+}
+
+.SolarSystem div :nth-child(6) img {
+  width: 242.41px;
+  height: 190.9px;
+}
+
+.SolarSystem div :nth-child(7) img {
+  width: 134px;
+  height: 99px;
+}
+
+.SolarSystem div :nth-child(8) img {
+  width: 134px;
+  height: 97px;
+}
+
+.SolarSystem section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+  left: 553px;
+  top: 444px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 80px;
+}
+
+.SolarSystem h2 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  left: 560px;
+  top: 941px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.master div {
+  width: 100%;
+}
+
+.mission .nameYear::before {
+  background-color: #FFFFFF;
+  content: "";
+  height: 1px;
+  width: 100%;
+}
+
+.planetas p {
+  display: flex;
+  flex-basis: 60%;
+  height: 80%;
+  align-items: flex-end;
+  justify-content: flex-start;
+
+}
+
+.SolarSystem .planetImage {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  flex-direction: column-reverse;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.planetImage div {
+  display: flex;
+  flex-basis: 80%;
+}
+
+.SolarSystem div::after {
+  content: '';
+  display: flex;
+  width: 250%;
+  height: 0.5px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  top: 125px;
+  left: 0;
+  z-index: -1;
+}
+
+.master h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  left: 560px;
+
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  /* identical to box height, or 60px */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}
+
+.master section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 20px;
+}
+
+.mission_year {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 451px;
+  height: 54px;
+  left: 161px;
+  top: 1063px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.mission_name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-basis: 100%;
+  margin: 20px;
+  width: 100%;
+  height: 54px;
+  left: 161px;
+  top: 1063px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.mission_country,
+.mission_title,
+.mission_destination {
+  display: flex;
+  margin-left: 15px;
+  flex-wrap: nowrap;
+  font-size: 20px;
+  justify-content: flex-start;
+  flex-basis: 50%;
+  height: 54px;
+  left: 161px;
+  top: 1063px;
+  font-family: 'Epilogue';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 120%;
+  display: flex;
+  text-transform: uppercase;
+  color: #FFFFFF;
+
+}
+
+.missions .nameYear p {
+  display: flex;
+  font-size: 18px;
+  flex-basis: 30%;
+  margin-left: 10px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: nowrap;
+}
+
+.missions .mission .nameYear {
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 10px 60px 10px;
+}
+
+.nameYear .midle {
+  background-color: aqua;
+  width: 50px;
+}
+
+.missions img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
 }

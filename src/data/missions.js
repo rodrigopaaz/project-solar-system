@@ -1,4 +1,4 @@
-const USA = 'Estados Unidos';
+const USA = 'USA';
 const URSS = 'URSS';
 const INTERESTELAR = 'Espaço interestelar';
 
